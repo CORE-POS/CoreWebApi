@@ -1,0 +1,38 @@
+This project uses the Flask framework for python.
+Refer to the project's documentation for details
+on installing it. This is one way but not the only way.
+Python's virtualenv tool is required. It's probably
+available from your distro's package manager.
+
+================================================
+Get dependencies
+================================================
+Create a virtualenv for the project
+$ virtualenv venv
+
+Activate the virtual env
+$ . venv/bin/activate
+
+Download and install required packages
+(venv)$ pip install Flask
+(venv)$ pip install sqlalchemy
+
+If you are using MySQL, you'll also need:
+(venv)$ pip install MySQL-python
+
+This probably requires the mysql-devel package or
+equivalent. Other databases may work but have not
+been tested.
+
+================================================
+Configure project
+================================================
+Edit CoreWebApi/default_settings.py and enter
+your own values for DATABASE_URI.
+
+================================================
+Run!
+================================================
+(venv)$ python runserver.py
+
+See Flask documentation for other deployment options.

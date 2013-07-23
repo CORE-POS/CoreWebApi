@@ -1,0 +1,6 @@
+<!doctype html>
+<ul>
+{% for item in items %}
+<li><a href="{{ url_for('show_item',upc=item.upc) }}">{{item.upc}}</a> {{item.description}}</li>
+{% endfor %}
+</ul>
