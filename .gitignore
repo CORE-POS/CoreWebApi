@@ -1,3 +1,4 @@
 *.pyc
 venv
 CoreWebApi/default_settings.py
+CoreWebApi/static/uploads/*
