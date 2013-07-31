@@ -4,12 +4,19 @@
 	<title>CoreWebApi</title>
 </head>
 <body>
+<h3>GET methods</h3>
 <ul>
 	<li><b>/sales/</b> get list of sale items</li>
 	<li><b>/membersales/</b> get list of member-only sale items</li>
 	<li><b>/item/&lt;upc&gt;</b> get info about item</li>
 	<li><b>/search/&lt;term&gt;</b> get list of items matching the
 		search term</li>
+	<li><b>/filehash/&lt;filename&gt;</b> get MD5 hash of file</li>
+	<li><b>/file/&lt;filename&gt;</b> get actual file</li>
+</ul>
+<h3>POST methods</h3>
+<ul>
+	<li><b>/file/&lt;apikey&gt;&lt;file&gt;</b> Upload a file</li>
 </ul>
 </body>
 </html>
